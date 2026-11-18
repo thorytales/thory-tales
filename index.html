@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Thory Tales</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Thory Tales, auteur indépendant de dark fantasy, urban fantasy et romance MM. Des héros queer, des mondes extraordinaires : livres, salons du livre, actualités et newsletter.">
+<meta name="theme-color" content="#08070b">
+<link rel="canonical" href="https://www.thory-tales.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Thory Tales · Des héros queer, des mondes extraordinaires">
+<meta property="og:description" content="Dark fantasy, urban fantasy et romance MM. Livres, salons et actualités de Thory Tales.">
+<meta property="og:url" content="https://www.thory-tales.com/">
+<meta property="og:image" content="https://www.thory-tales.com/assets/img/partage.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Mulish:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Thory Tales","url":"https://www.thory-tales.com/","jobTitle":"Auteur indépendant","sameAs":["https://www.instagram.com/thory.tales/","https://www.tiktok.com/@thory.tales"]}
+</script>
+</head>
+<body>
+
+<header class="entete">
+  <div class="enveloppe">
+    <a class="logo" href="#accueil" aria-label="Thory Tales, retour en haut">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="arc" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#ff4d6d"/><stop offset=".25" stop-color="#ff9f1c"/><stop offset=".45" stop-color="#ffe14d"/><stop offset=".65" stop-color="#3ddc97"/><stop offset=".82" stop-color="#3aa7ff"/><stop offset="1" stop-color="#9b5de5"/></linearGradient></defs><path d="M27 4C17 5 9 12 7 22l-2 6 3-4c9 0 16-7 19-20Z" fill="url(#arc)"/><path d="M6 27 21 10" stroke="#08070b" stroke-width="1.4" fill="none"/></svg>
+      Thory Tales
+    </a>
+    <button class="menu-bouton" id="menu-bouton" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Rubriques">
+      <a href="#livres">Livres</a>
+      <a href="#agenda-salons">Salons</a>
+      <a href="#actualites">Actus</a>
+      <a href="#a-propos">L'auteur</a>
+      <a href="#newsletter">Newsletter</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ===== Ouverture ===== -->
+  <section class="ouverture" id="accueil">
+    <canvas id="fumees" aria-hidden="true"></canvas>
+    <div class="enveloppe">
+      <div>
+        <p class="surtitre">Dark fantasy · Urban fantasy · Romance MM</p>
+        <h1>Des héros queer, des mondes <em>extraordinaires</em></h1>
+        <p class="plume">L'amour mérite toutes les aventures.</p>
+        <div class="actions">
+          <a class="bouton principal" href="#livres" id="bouton-decouvrir">Découvrir la nouveauté</a>
+          <a class="bouton" href="#livres">Tous les livres</a>
+        </div>
+      </div>
+      <div class="vedette" id="vedette"></div>
+    </div>
+  </section>
+
+  <!-- ===== Livres ===== -->
+  <section class="bande" id="livres">
+    <div class="enveloppe">
+      <div class="tete-bande">
+        <div>
+          <p class="surtitre">Bibliographie</p>
+          <h2>Mes livres</h2>
+        </div>
+        <div class="filtres" id="filtres" aria-label="Filtrer par genre"></div>
+      </div>
+      <div class="grille-livres" id="grille-livres"></div>
+    </div>
+  </section>
+
+  <!-- ===== Thoryverse ===== -->
+  <section class="bande alt" id="thoryverse">
+    <div class="enveloppe univers">
+      <div>
+        <p class="surtitre">Univers partagé</p>
+        <h2>Le Thoryverse</h2>
+        <p>Certaines de mes histoires partagent le même monde : les mers d'Yrmar, ses rois, ses sorcières et ses serments. Chaque roman se lit seul, mais ensemble ils racontent une mémoire plus vaste.</p>
+      </div>
+      <div class="constellation" id="constellation"></div>
+    </div>
+  </section>
+
+  <!-- ===== Agenda ===== -->
+  <section class="bande" id="agenda-salons">
+    <div class="enveloppe">
+      <div class="tete-bande">
+        <div>
+          <p class="surtitre">Venez me rencontrer</p>
+          <h2>Salons et dédicaces</h2>
+        </div>
+        <p class="intro">Dédicaces, éditions reliées et goodies : retrouvez-moi sur mon stand.</p>
+      </div>
+      <div class="agenda" id="agenda"></div>
+      <div id="agenda-passes"></div>
+    </div>
+  </section>
+
+  <!-- ===== Actualités ===== -->
+  <section class="bande alt" id="actualites">
+    <div class="enveloppe">
+      <div class="tete-bande">
+        <div>
+          <p class="surtitre">Du côté de l'écritoire</p>
+          <h2>Actualités</h2>
+        </div>
+      </div>
+      <div class="grille-actus" id="actus"></div>
+    </div>
+  </section>
+
+  <!-- ===== À propos ===== -->
+  <section class="bande" id="a-propos">
+    <div class="enveloppe apropos">
+      <div class="portrait">
+        <!-- Pour ta photo : ajoute assets/img/portrait.jpg puis remplace le texte ci-dessous par
+             <img src="assets/img/portrait.jpg" alt="Portrait de Thory"> -->
+        Ta photo ici
+      </div>
+      <div>
+        <p class="surtitre">L'auteur</p>
+        <div class="tete-bande" style="margin-bottom:28px"><h2>Thory Tales</h2></div>
+        <div class="texte" id="bio"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Newsletter ===== -->
+  <section class="bande alt" id="newsletter">
+    <div class="enveloppe">
+      <div class="newsletter">
+        <div>
+          <p class="surtitre">La lettre de Thory</p>
+          <h2>Ne manquez aucune sortie</h2>
+          <p class="intro">Nouveautés, dates de salons, coulisses d'écriture et avant-premières. Une lettre de temps en temps, jamais de spam, désinscription en un clic.</p>
+        </div>
+        <!-- Brevo : l'adresse d'envoi se règle dans assets/js/contenu.js (brevoAction).
+             Le champ doit s'appeler EMAIL, comme dans le formulaire Brevo. -->
+        <form id="form-newsletter" novalidate>
+          <div class="champ">
+            <label for="nl-prenom">Prénom (facultatif)</label>
+            <input type="text" id="nl-prenom" name="PRENOM" autocomplete="given-name">
+          </div>
+          <div class="champ">
+            <label for="nl-email">Adresse e-mail</label>
+            <input type="email" id="nl-email" name="EMAIL" autocomplete="email" required placeholder="vous@exemple.fr">
+          </div>
+          <label class="consentement" for="nl-consentement">
+            <input type="checkbox" id="nl-consentement" name="OPT_IN" value="1">
+            J'accepte de recevoir la lettre de Thory Tales par e-mail. Mon adresse sert uniquement à cet envoi et je peux me désinscrire à tout moment.
+          </label>
+          <input type="text" name="email_address_check" value="" class="visuellement-cache" tabindex="-1" aria-hidden="true">
+          <input type="hidden" name="locale" value="fr">
+          <div><button class="bouton principal" type="submit">Je m'inscris</button></div>
+          <p class="message-form" id="nl-message" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="bande" id="contact">
+    <div class="enveloppe contact">
+      <div>
+        <p class="surtitre">Écrire à Thory</p>
+        <div class="tete-bande" style="margin-bottom:0"><h2>Contact</h2></div>
+        <p class="adresse">Lecteurs, organisateurs de salons, libraires, chroniqueurs : écrivez-moi à <strong data-email></strong></p>
+        <div class="reseaux">
+          <a data-lien="instagram" href="#" target="_blank" rel="noopener">Instagram <span>@thory.tales →</span></a>
+          <a data-lien="tiktok" href="#" target="_blank" rel="noopener">TikTok <span>@thory.tales →</span></a>
+        </div>
+      </div>
+      <form id="form-contact">
+        <div class="champ">
+          <label for="ct-nom">Nom</label>
+          <input type="text" id="ct-nom" name="name" autocomplete="name" required>
+        </div>
+        <div class="champ">
+          <label for="ct-email">E-mail</label>
+          <input type="email" id="ct-email" name="email" autocomplete="email" required>
+        </div>
+        <div class="champ">
+          <label for="ct-message-texte">Message</label>
+          <textarea id="ct-message-texte" name="message" required></textarea>
+        </div>
+        <input type="checkbox" name="botcheck" class="visuellement-cache" tabindex="-1" aria-hidden="true">
+        <div><button class="bouton principal" type="submit">Envoyer</button></div>
+        <p class="message-form" id="ct-message" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="pied">
+  <div class="enveloppe">
+    <span>© <span data-annee></span> Thory Tales · L'amour mérite toutes les aventures</span>
+    <button type="button" id="ouvrir-mentions">Mentions légales et confidentialité</button>
+  </div>
+</footer>
+
+<!-- Fiche livre -->
+<dialog id="fiche-livre" aria-labelledby="fiche-titre">
+  <button class="fermer" data-fermer aria-label="Fermer">✕</button>
+  <div id="fiche-contenu"></div>
+</dialog>
+
+<!-- Mentions légales : complète les champs [entre crochets] -->
+<dialog id="mentions" aria-labelledby="mentions-titre">
+  <button class="fermer" data-fermer aria-label="Fermer">✕</button>
+  <div class="legal">
+    <h2 id="mentions-titre">Mentions légales</h2>
+    <h3>Éditeur du site</h3>
+    <p>[Prénom Nom], auteur sous le nom Thory Tales, entrepreneur individuel (Thory Tales Créations). SIRET : [à compléter]. Adresse : [adresse ou domiciliation]. Contact : <span data-email></span>.</p>
+    <p>Directeur de la publication : [Prénom Nom].</p>
+    <h3>Hébergement</h3>
+    <p>Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107, États-Unis (Cloudflare Pages).</p>
+    <h3>Propriété intellectuelle</h3>
+    <p>Les textes, résumés, couvertures et visuels de ce site sont protégés. Toute reproduction sans autorisation est interdite. Les couvertures restent la propriété de leurs illustrateurs et graphistes.</p>
+    <h3>Données personnelles</h3>
+    <p>Ce site ne dépose aucun cookie publicitaire ni de mesure d'audience. L'adresse e-mail laissée dans le formulaire de newsletter sert uniquement à l'envoi de la lettre via Brevo (Sendinblue SAS, France). Les messages du formulaire de contact transitent par Web3Forms et ne servent qu'à vous répondre.</p>
+    <p>Conformément au RGPD, vous pouvez demander l'accès, la rectification ou la suppression de vos données en écrivant à <span data-email></span>. Vous pouvez aussi vous désinscrire via le lien présent dans chaque lettre.</p>
+  </div>
+</dialog>
+
+<script src="assets/js/contenu.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
